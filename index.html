@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="desktop-nav">
+        <div class="logo">Arwa Yaareb</div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact me</a></li>
+        </ul>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">Arwa Yaareb</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact me</a></li>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="profile-hero">
+        <div class="section__pic-container">
+          <img
+            id="mypic"
+            src="./assets/Me.png"
+            alt="Arwa Yaareb Profile Picture"
+            style="border-radius: 600px;"
+          />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello I'm</p>
+          <h1 class="title">Arwa Yaareb</h1>
+          <!-- in thus p section i want to maeke it type changing! -->
+          <p class="section__text__p2">Frontend Developer</p>
+          <div class="btn-container">
+            <!-- here i can add my resume(CV)!! make sure its in (.pdf) -->
+            <button class="btn btn-color-2" onclick="window.open('./assets/')">
+              Download CV
+            </button>
+            <button
+              class="btn btn-color-1"
+              onclick="location.href='./#contact'"
+            >
+              Contact info
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="./assets/github.png"
+              alt="My LinkedIn Profile"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/in/arwa-yaareb-4ab720292/'"
+            />
+            <img
+              src="./assets/linkedin.png"
+              alt="My GitHub Profile"
+              class="icon"
+              onclick="location.href='https://github.com/ArwaYearub'"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <p class="section__text__p1">Get to Know Me</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic__container">
+            <!-- add on about picture here -->
+            <!-- <img src="./assets/purple-center-try-about.jpg" alt=""> -->
+            <!-- <img
+              src="./assets/purple-heart.png"
+              alt="add my about picture here"
+              class="about-pic"
+            /> -->
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="./assets/experience.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p>
+                  +3 months <br />
+                  IT Help Desk - Student Life Department at AUIB
+                </p>
+                <!-- add more experience -->
+              </div>
+              <div class="details-container">
+                <img
+                  src="./assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>
+                  Currently a Computer Science Sophomore student<br />
+                  At AUIB
+                </p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                Lorem ipsum dolor sit amet.
+                <!-- add smthn in the about!!!! -->
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#experience'"
+        />
+      </section>
+
+      <!-- experince is the same as skills(for own clarity) -->
+      <section id="experience">
+        <!-- its called experince but its actually the sckills section! -->
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">
+          Skills <img src="./assets/checkmark.png" alt="" class="icon" />
+        </h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Frontend</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/skills/html.png"
+                    alt="HTML Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/skills/css.png"
+                    alt="CSS Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/skills/js.png"
+                    alt="JavaScript Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/skills/react.png"
+                    alt="React Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>REACT</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/skills/git.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Git</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/skills/c++.png"
+                    alt="C++ Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>C++</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="experience-sub-title">Other skills</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/skills/git.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Git</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/skills/c++.png"
+                    alt="C++ Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>C++</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/skills/python.png"
+                    alt="Python Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Python</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/skills/notion.png"
+                    alt="Notion Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Notion</h3>
+                    <p>Expert++</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+        />
+      </section>
+
+      <section id="projects">
+        <p class="section__text__p1">My Humble Projects</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <!-- here is where i will be adding my projects' videos or photos HERE!-->
+              <img
+                src="./assets/purple-heart.png"
+                alt="project1"
+                class="progect-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com'"
+              >
+                GitHub
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
