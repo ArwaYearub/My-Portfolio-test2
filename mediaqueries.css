@@ -1,8 +1,62 @@
-@media screen and (max-width: 922px) {
+@media screen and (max-width: 1400px) {
+    #profile-hero{
+        height: 87vh;
+        margin-bottom: 6rem;
+    }
+    .about-containers{
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
     #desktop-nav{
         display: none;
     }
     #hamburger-nav{
         display: flex;
     }
+    #experience, .experience-details-container {
+        margin-top: 2rem ;
+    }
+    #profile-hero, .section-container{
+        display: block;
+    }
+    .arrow{
+        display: none;
+
+    }
+    section, .section-container{
+        height: fit-content;
+    }
+    section{
+        margin: .5%;
+    }
+    .section__pic-container{
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    }
+
+    .about-containers{
+        margin-top: 0;
+    }
+    #about .section-container{
+        background-color: white;
+
+    }
+    #about .about-pic{
+        height: fit-content;
+        position: absolute;
+    }
+    #contact .chat-pic-container{
+        display: none;
+    }
+    
 }
+
+

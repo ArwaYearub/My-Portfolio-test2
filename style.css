@@ -352,7 +352,7 @@ header{
 /*  the project section */
 #projects{
   position: relative;
-
+  margin: 2rem;
 }
 
 .color-container{
@@ -361,8 +361,8 @@ header{
 }
 .project-img{
   border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
 
 }
 
@@ -392,7 +392,7 @@ contact{
   display: flex;
   justify-content: center;
   border-radius: 2rem;
-  border: rgb(53,53,53) .1 solid;
+  border: rgb(53,53,53) .1rem solid;
   border-color: rgb(163,163,163);
   background: (250,250,250);
   margin: 2rem auto;
