@@ -267,13 +267,18 @@ section {
 }
 
 .section-container {
+  left: 20rem;
+  right: 20rem;
   gap: 4rem;
-  height: 100vh;  justify-content:center ;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 200;
 }
 .section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
+  margin: auto;
+  flex: 1;
 }
 
 /* Skills section */
@@ -342,3 +347,36 @@ article .icon{
 header{
     background-color: none;
 }
+
+
+/*  the project section */
+#projects{
+  position: relative;
+
+}
+
+.color-container{
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+.project-img{
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+
+}
+
+.project-title{
+  margin: 2rem;
+  color: black;
+
+}
+
+.project-btn{
+  color: black;
+  border-color: rgb(163, 163, 163);
+
+}
+
+
+/* contact section (note to self: i will change it later using the email js thingy */
