@@ -239,6 +239,11 @@ section {
   justify-content: center;
   flex-direction: column;
 }
+
+/* .section-container-about{
+  display: flex;
+  
+} */
 .about-containers,
 .about-details-container {
   display: flex;
@@ -263,7 +268,7 @@ section {
 
 .section-container {
   gap: 4rem;
-  height: 80%;
+  height: 100vh;  justify-content:center ;
 }
 .section__pic-container {
   height: 400px;
